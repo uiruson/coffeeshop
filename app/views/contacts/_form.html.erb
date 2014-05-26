@@ -1,0 +1,34 @@
+<%= bootstrap_form_for(@contact, layout: :horizontal,inline_errors: false, error_summary: false, label_col: "col-sm-2", :html => { :id => 'contactForm' }) do |f| %>
+  
+  <%= f.text_field :name, control_col: "col-sm-6" , id: "senderName", name: "name"%>
+  <%= f.email_field :email, control_col: "col-sm-6", id: "senderEmail", name: "email"%>
+  <%= f.text_area :message, control_col: "col-sm-6", id: "senderMessage", message: "message"%>
+  <div class="error-message"> </div><!--Error Message Placeholder-->
+  <%= f.form_group do %>
+    <%= f.submit "Send" ,class: "btn btn-info" %>
+  <% end %>
+<% end %>
+
+<!--Incomplete message-->
+<div class="incompleteMessageDiv">
+   <p>Please complete all the fields in the form before sending</p>
+</div>
+
+ <!--Sending Progress message-->
+<div class="sendingMessageDiv">
+   <p>Sending Your Message...Please Wait</p>
+</div>
+
+<!--Thank you message-->
+<div class="thankYouMessageDiv">
+   <span style="font-size:20px;">Thank you for your message!</span>
+   <p>I'll get in touch with you soon</p>
+</div>
+
+
+<!--Failed message-->
+<div class="failedMessageDiv">
+   <span style="font-size:20px;">There was a problem sending your message!</span>
+   <p>Please try again</p>
+</div>
+

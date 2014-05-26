@@ -1,0 +1,308 @@
+  <!-- HOME SECTION -->
+  <section id="home">
+   
+    <!--HOME CONTENT -->
+    <div class="container homeContent">
+    <div class="row">
+      <div class="col-md-12 homeText">
+        <h1>Vancouver Coffee Shops Guide<span>BETA</span></h1>
+      <p>Easy to use guide to enjoy best coffee in town!</p>
+      <br>  
+      </div>
+    </div>      
+    </div>
+    <!-- END OF HOME CONTENT -->
+
+    <!-- DOWN ARROW NAVIGATION -->
+    <div class="container arrowContainer">
+    <div class="row">
+      <div class="col-md-12">
+      <a class="smoothScroll" href="#about"><i class="fa fa-angle-double-down fa-4x" style="color:#00D8CC;margin-top:10px;"></i></a>
+      </div>
+    </div>
+      </div>
+      <!-- END OF DOWN ARROW NAVIGATION -->
+  </section>
+  <!-- END HOME SECTION -->
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+     
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" >
+      <div class="container">
+         <div class="row">
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <i class="fa fa-arrow-down " style="color:#00D8CC;"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="/assets/logo-1.png"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right" id="menu">
+              <li><a class="smoothScroll" href="#home">Home</a></li>
+                <li><a class="smoothScroll" href="#about">About</a></li>
+                <li><a class="smoothScroll" href="#guide">Guide</a></li>
+                <li><a class="smoothScroll" href="#feature">Feature</a></li>
+                <li><a class="smoothScroll" href="#blog">Blog</a></li>
+                <li><a class="smoothScroll" href="#contact">Contact</a></li>
+            </ul><!--nav-->
+        </div>
+      </div><!--END OF ROW-->
+    </div><!--END OF CONTAINER-->
+    </nav><!--END OF NAVBAR SECTION-->
+    
+    <!-- ABOUT HEADER -->
+    <div class="container aboutHeader">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">ABOUT</h2>
+      <p>Local guide to hip coffee shops in town focusing on great coffee, different brewing methods, cool atmosphere for meeting and chills</p>
+      </div>
+    </div>
+    </div>
+    <!-- END OF ABOUT HEADER -->
+    
+    <!-- ABOUT CONTENT -->
+    <div class="container aboutContent">
+    <div class="row">
+      <div class="col-md-4">
+      <img src="/assets/icon/shop.png" alt="">
+      <h3>Great Vibe</h3>
+      <p>Guide to local coffee shops with great vibe</p>
+      </div>
+      <div class="col-md-4">
+      <img src="/assets/icon/coffee.png" alt="">
+      <h3>Great Coffee</h3>
+      <p>Guide to local coffee shops serving great coffee</p>
+      </div>
+      <div class="col-md-4">
+      <img src="/assets/icon/love.png" alt="">
+      <h3>Friendly Service</h3>
+      <p>Guide to local coffee shops with great customer service</p>
+      </div>  
+    </div>
+    </div>
+    <!-- END OF ABOUT CONTENT -->
+    
+  </section>
+  <!-- END ABOUT SECTION -->
+
+  <!-- GUIDE SECTION -->
+  <section id="guide" ng-app="guideApp" ng-controller="guideController">
+  
+    <!-- GUIDE HEADER -->
+    <div class="container guideHeader">
+      <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">GUIDE</h2>
+      <p>Local coffee shops guide based on neighbourhood<br>
+      <span>Neighbourhood:</span> <select ng-init="selectedItem = selectedItem || areas[0]" ng-class="{active: current == area.name}" ng-model="selectedItem"  ng-options="area.name for area in areas" class="filter"></select>
+      </p>
+      </div>
+    </div>
+    </div><!--END OF GUIDE HEADER-->
+    
+    <!-- COFFEESHOPS THUMBNAIL GUIDE WITH DESCRIPTIONS -->
+    <div ng-view></div>
+    <!-- LOCATION ARTWORK -->
+    <div class="container artWorkContainer">
+    <div class="row">
+      <div class="col-md-12">
+      <img src="/assets/location.png">
+      </div>
+    </div>
+      </div>
+      <!-- END OF DOWN ARROW NAVIGATION -->
+    <!-- END OF COFFEESHOPS THUMBNAIL GUIDE WITH DESCRIPTIONS -->
+    
+  </section>
+  <!-- END OF GUIDE SECTION -->
+
+  <!-- FEATURE SECTION -->
+  <section id="feature">
+    <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z" />
+    </svg>
+    <!--FEATURE CONTAINER-->  
+  
+      <!-- FEATURE HEADER -->
+    <div class="container featureHeader">
+     <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">FEATURE</h2>
+      <p>We will feature a monthly brewing method and a guide to local coffeeshops that serve it</p>
+      </div>
+     </div><!-- END OF FEATURE HEADER -->
+    
+     <div class="container">
+      <div class="row">
+           <div id="cbp-so-scroller" class="cbp-so-scroller">
+              <section class="cbp-so-section"><!-- FEATURE CONTENT SECTION-->
+
+                  <!-- RIGHT FEATURES IMAGE -->
+                    <figure class="cbp-so-side cbp-so-side-left">
+                      <img src="/assets/layout/chemex.jpg" class="img-responsive" alt="chemex">
+                    </figure>
+                    <!-- END OF FEATURE IMAGE SECTION -->
+                  
+                    <!-- FEATURE TEXT SECTION-->
+                    <article class="cbp-so-side cbp-so-side-right col-xs-12">
+                      <h2>Chemex...it's that good!<br/></h2>
+                      <p>The bonded filter, heavier than most, filters out oils and sediment, leading to a bitterness-free cup of coffee</p>
+                      <p class="muted">Coffee Shops serving Chemex:</p>
+                        <ul class="coffeeIcons">
+                          <li><i class="fa fa-angle-right"></i>Revolver Coffee</li>
+                          <li><i class="fa fa-angle-right"></i>Stumptown Vancouver Pop-up</li>
+                          <li><i class="fa fa-angle-right"></i>Matchstick Coffee Roasters</li>
+                        </ul>
+                      <br>
+                      <a class="btn btn-info">Learn More</a>
+                    </article>
+                    <!-- END OF FEATURE TEXT SECTION -->
+
+              </section><!-- END OF FEATURE CONTENT SECTION -->
+            </div><!--END OF FEATURE CONTAINER-->
+        </div><!--END OF ROW DIV-->
+      </div><!-- END OF CONTAINER DIV -->
+  </section>
+  <!-- END FEATURE SECTION -->
+
+  <!--BLOG SECTION-->
+  <section id="blog">
+    <svg id="bigTriangleColor2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+      <path d="M0 0 L50 100 L100 0 Z" />
+    </svg>
+    <!-- BLOG CONTAINER -->
+    <div class="container blogHeader">
+      <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">BLOG</h2>  
+       </div>
+    </div>
+    </div>
+
+    <div class="container blogSubscription">
+      <div class="col-md-6 col-lg-4"></div>
+       <div class="col-md-6 col-lg-8">
+          <div class="row">
+          <div class="col-md-12">
+            <%= render :partial => 'blogs/form' , :blog => @blog, :id => 'blogForm'%> 
+            <!--
+            <form id="blogSubscription">
+            <div class="col-md-4">
+              <input id="email" name="email" class="col-md-3" type="text" placeholder="YOUR E-MAIL">
+              </div>
+              <div class=" col-md-6">
+                 <a class="btn btn-danger">SUBSCRIBE</a>
+              </div>
+          </form><!-- END OF BLOG SUBSCRIPTION FORM --> 
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!--BLOG SHOWCASE-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/blog-1-banner.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>KAFKA'S COFFEE</h3>
+            <p>Syphon coffee at Kafka's Coffee</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/blog-2-banner.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>TIMBERTRAIN COFFEE ROASTER</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/blog-3-banner.jpg" alt="...">
+          <div class="carousel-caption">
+            <h3>TIMBERTRAIN COFFEE ROASTER</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!--END OF BLOG SHOWCASE-->   
+  </section>  
+  <!-- END BLOG SECTION -->
+  
+  <!--CONTACT US SECTION-->
+  <section id="contact">
+   <!-- CONTACT US CONTAINER -->
+    <div class="container contactHeader">
+      <div class="row">
+      <div class="col-md-12">
+        <h2 class="sectionHeading">CONTACT</h2>  
+        <p><i class="fa fa-envelope-o"></i> Get in Touch with Us!</p>
+       </div>
+    </div>
+  <!-- CONTACT CONTENT -->
+      <div class="container contactContainer">
+        
+        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+        <!-- CONTACT FORM -->
+        <div class="col-md-6 col-lg-6">
+          <div class="row">
+            <%= render :partial => 'contacts/form' , :contact => @contact, :id => 'contactForm' %> 
+          </div><!-- END OF ROW -->
+        </div><!-- END CONTACT FORM CONTAINER-->
+        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+      </div>
+  <!-- END OF CONTACT CONTENT -->
+
+  </section>
+  <!--END OF CONTACT US SECTION-->
+
+  <!-- FOOTER SECTION -->
+  <section id="footer">
+  <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z" />
+  </svg>
+    <div class="container">
+    <div class="row">
+      
+      <!-- COPYRIGHT -->
+      <div class="col-md-6">
+      <p class="copyright">&copy;2014 Vancouver Coffee Shops Guide</p>
+      </div>
+      <!-- END COPYRIGHT -->
+      
+      <!-- SOCIAL MEDIA SECTION-->
+      <div class="col-md-6">
+      <div class="social">
+        <a href="#"><img src="/assets/social/fb.png" class="img-circle" alt="facebook"></a>
+        <a href="#"><img src="/assets/social/twitter.png" class="img-circle" alt="twitter"></a>
+        <a href="#"><img src="/assets/social/googleplus.png" class="img-circle" alt="google"></a>
+        <a href="#"><img src="/assets/social/rss.png" class="img-circle" alt="rss"></a>
+      </div>
+      </div>
+      <!-- END SOCIAL MEDIA SECTION -->
+      
+    </div>
+    </div>
+  </section>
+  <!-- END OF FOOTER SECTION -->

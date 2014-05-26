@@ -1,0 +1,71 @@
+ <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" >
+      <div class="container">
+         <div class="row">
+         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <i class="fa fa-arrow-down " style="color:#00D8CC;"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img src="/assets/logo-1.png"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right" id="menu">
+              <li><%= link_to 'Home', coffeeshoplists_path %></li>
+                <li class="active"><a class="smoothScroll" href="#guide">Guide</a></li>
+            </ul><!--nav-->
+        </div>
+      </div><!--END OF ROW-->
+    </div><!--END OF CONTAINER-->
+    </nav><!--END OF NAVBAR SECTION-->
+
+    <!-- GUIDe HEADER -->
+    <div class="container guideHeader">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="sectionHeading">GUIDE</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container coffeeshopinfoContainer">
+        <div class="row">
+            <div class="col-md-12">
+                <p>ARCHIVE BY REVOLVER COFFEE</p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container" id="guideInfo">
+              <div class="row">
+                <div class="col-md-3">
+                  <i class="fa fa-map-marker" style="color:#00D8CC;"></i> VANCOUVER EAST
+                </div>
+                 <div class="col-md-3">
+                  <i class="fa fa-home" style="color:#00D8CC;"></i> 321 CAMBIE ST, VANCOUVER, BC
+                </div>
+                 <div class="col-md-3">
+                  <i class="fa fa-clock-o" style="color:#00D8CC;"></i> MON-FRI: 9-6&nbsp;&nbsp;|&nbsp;&nbsp;SAT: 9-6
+                </div>
+                <div class="col-md-3">
+                  <i class="fa fa-phone" style="color:#00D8CC;"></i> (604) 558-4444
+                </div>
+              </div><!--END OF ROW-->
+           </div><!--END OF CONTAINER-->
+          </div><!--END OF COL-->
+        </div><!--END OF ROW-->
+    </div><!--END OF CONTAINER->
+    <!-- END OF ABOUT HEADER -->
+    <br/><br/>
+
+    <div class="container coffeeshopImages">
+      <div class="row">
+        <div class="col-md-12">
+            <% @instagram.each do |instagram| %>
+              <%= image_tag instagram.images.low_resolution.url %>
+            <% end %>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,25 @@
+<%= form_for(@coffeeshoplist) do |f| %>
+  <% if @coffeeshoplist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coffeeshoplist.errors.count, "error") %> prohibited this coffeeshoplist from being saved:</h2>
+
+      <ul>
+      <% @coffeeshoplist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :coffeeshopname %><br>
+    <%= f.text_field :coffeeshopname %>
+  </div>
+  <div class="field">
+    <%= f.label :coffeeshopaddress %><br>
+    <%= f.text_field :coffeeshopaddress %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

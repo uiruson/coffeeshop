@@ -1,0 +1,33 @@
+<%= bootstrap_form_for(Blog.new, layout: :inline, :html => { :id => 'blogForm' }) do |f| %>
+
+  <div class="field">
+    <%= f.email_field :email, control_col: "col-sm-4", placeholder: "YOUR E-MAIL", hide_label: true, id: "blogEmail", name: "email" %>
+    <%= f.submit "SUBSCRIBE" ,class: "btn btn-danger" %>
+    <br/>
+    <div class="blog-error-message col-sm-4" > </div><!--Error Message Placeholder-->
+  </div>
+  
+<% end %>
+
+<!--Incomplete message-->
+<div class="incompleteBlogDiv">
+   <p>Please complete all the fields in the form before sending</p>
+</div>
+
+ <!--Sending Progress message-->
+<div class="sendingBlogDiv">
+   <p>Sending Your Message...Please Wait</p>
+</div>
+
+<!--Thank you message-->
+<div class="thankYouMessageBlogDiv">
+   <span style="font-size:20px;">Thank you for subscribing!</span>
+</div>
+
+
+<!--Failed message-->
+<div class="failedMessageBlogDiv">
+   <span style="font-size:20px;">There was a problem sending your subscription!</span>
+   <p>Please try again</p>
+</div>
+

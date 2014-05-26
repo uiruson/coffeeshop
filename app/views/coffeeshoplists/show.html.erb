@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Coffeeshopname:</strong>
+  <%= @coffeeshoplist.coffeeshopname %>
+</p>
+
+<p>
+  <strong>Coffeeshopaddress:</strong>
+  <%= @coffeeshoplist.coffeeshopaddress %>
+</p>
+
+<%= link_to 'Edit', edit_coffeeshoplist_path(@coffeeshoplist) %> |
+<%= link_to 'Back', coffeeshoplists_path %>
