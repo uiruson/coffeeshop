@@ -9,4 +9,5 @@ Pony.options = {
     :password => ENV['ks1gto6v'],
     :authentication => :plain,
     :enable_starttls_auto => true
+  }
 }
