@@ -4,8 +4,8 @@ Pony.options = {
     :address => 'smtp.sendgrid.net',
     :port => '587',
     :domain => 'heroku.com',
-    :user_name => ENV['app25689337@heroku.com'],
-    :password => ENV['ks1gto6v'],
+    :user_name => ENV['SENDGRID_USERNAME'],
+    :password => ENV['SENDGRID_PASSWORD'],
     :authentication => :plain,
     :enable_starttls_auto => true
   }
