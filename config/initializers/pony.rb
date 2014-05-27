@@ -1,5 +1,5 @@
 Pony.options = {
-  :to => 'app25689337@heroku.com',
+  :to => 'zozoyork@gmail.com',
   :via => :smtp,
   :via_options => {
     :address => 'smtp.sendgrid.net',
