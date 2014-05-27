@@ -1,5 +1,4 @@
 Pony.options = {
-  :to => 'zozoyork@gmail.com',
   :via => :smtp,
   :via_options => {
     :address => 'smtp.sendgrid.net',
