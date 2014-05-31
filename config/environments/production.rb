@@ -83,6 +83,6 @@ Rails.application.configure do
 
   config.assets.js_compressor = Uglifier.new(mangle: false)
 
-  config.assets.precompile += ['vendor/assets/stylesheets/active_admin.css.scss']
+  config.assets.precompile += ['*.css']
 
 end
