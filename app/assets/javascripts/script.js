@@ -41,4 +41,12 @@ $(function() {
              .end().filter("[href=#"+currentid+"]").parent().addClass("active");
            }                   
         });
+
+
+    var deviceHeight = $(window).height();
+    var deviceWidth= $(window).width();
+
+    $('#home').css('height',  deviceHeight);
+
+
  });
