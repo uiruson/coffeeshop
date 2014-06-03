@@ -28,6 +28,7 @@ group :production do
 end
 
 gem 'devise'
+gem 'sprockets_better_errors'
 
 #admin console
 gem 'activeadmin', github: 'gregbell/active_admin'
