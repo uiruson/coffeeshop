@@ -4372,9 +4372,11 @@ a.list-group-item.active > .badge,
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  color: inherit;
+  color: #fff;
   text-align: left;
+  background-color: none;
 }
+
 .jumbotron h1,
 .jumbotron .h1 {
   font-size:40px;
@@ -4396,6 +4398,9 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    color: #fff;
+    text-align: left;
+    background-color: none;
   }
 
  .jumbotron h1,
@@ -4420,6 +4425,9 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
+    color: #fff;
+    text-align: left;
+    background-color: none;
   }
   .container .jumbotron {
     padding-right: 60px;
@@ -4428,6 +4436,7 @@ a.list-group-item.active > .badge,
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 56px !important;
+    color: #fff;
   }
 }
 
@@ -4435,6 +4444,9 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
+    color: #fff;
+    text-align: left;
+    background-color: none;
   }
   .container .jumbotron {
     padding-right: 60px;
@@ -4443,6 +4455,7 @@ a.list-group-item.active > .badge,
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 63px;
+    color: #fff;
   }
 }
 .thumbnail {
