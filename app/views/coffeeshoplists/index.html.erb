@@ -3,14 +3,14 @@
    
     <!--HOME CONTENT -->
     <div class="container homeContent">
-    <div class="row">
-      <div class="col-md-12 jumbotron">
-        <h1>Vancouver Coffee Shops Guide<span>BETA</span></h1>
-      <p>Easy to use guide to enjoy best coffee in town!</p>
-      <br>  
-      </div>
-    </div>      
-    </div>
+      <div class="row">
+        <div class="col-md-12 jumbotron">
+          <h1>Vancouver Coffee Shops Guide<span>BETA</span></h1>
+          <p>Easy to use guide to enjoy best coffee in town!</p>
+          <br/> 
+        </div><!--END OF JUMBOTRON DIV-->
+      </div><!--END OF ROW DIV-->      
+    </div><!--END OF CONTAINER DIV-->
     <!-- END OF HOME CONTENT -->
 
     <!-- DOWN ARROW NAVIGATION -->
@@ -186,23 +186,13 @@
     </div>
 
     <div class="container blogSubscription">
-      <div class="col-md-6 col-lg-4"></div>
-       <div class="col-md-6 col-lg-8">
+      <div class="col-md-4 col-lg-4" ></div>
+       <div class="col-md-5 col-lg-5">
           <div class="row">
-          <div class="col-md-12">
-            <%= render :partial => 'blogs/form' , :blog => @blog, :id => 'blogForm'%> 
-            <!--
-            <form id="blogSubscription">
-            <div class="col-md-4">
-              <input id="email" name="email" class="col-md-3" type="text" placeholder="YOUR E-MAIL">
-              </div>
-              <div class=" col-md-6">
-                 <a class="btn btn-danger">SUBSCRIBE</a>
-              </div>
-          </form><!-- END OF BLOG SUBSCRIPTION FORM --> 
+              <%= render :partial => 'blogs/form' , :blog => @blog, :id => 'blogForm'%> 
           </div>
-        </div>
-      </div>
+       </div>
+       <div class="col-md-4 col-lg-4" ></div>
     </div>
         
     <!--BLOG SHOWCASE-->
@@ -263,14 +253,14 @@
   <!-- CONTACT CONTENT -->
       <div class="row">
         
-        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+        <div class="col-md-4 col-lg-4" ></div>
         <!-- CONTACT FORM -->
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-5 col-lg-5">
           <div class="row">
             <%= render :partial => 'contacts/form' , :contact => @contact, :id => 'contactForm' %> 
           </div><!-- END OF ROW -->
         </div><!-- END CONTACT FORM CONTAINER-->
-        <div class="col-md-3 col-lg-3" class="background-color:black;"></div>
+        <div class="col-md-4 col-lg-4" ></div>
       </div>
   <!-- END OF CONTACT CONTENT -->
 

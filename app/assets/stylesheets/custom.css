@@ -20,19 +20,27 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
 	.homeText {
 		margin-top: 0;
 	}
+
+	.homeContent span{
+		font-size: 11px !important;
+	}
 	
 }
 
-#iPhone 4 
+//iPhone 4 
 @media (min-width: 640px) and (max-width: 960px) {
 
 	.homeText {
 		margin-top: 0;
+	}
+
+	.homeContent span{
+		font-size: 11px !important;
 	}
 	
 }
@@ -140,6 +148,10 @@
 		font-size:12px;
 		padding: 0;
 	}
+
+	.homeContent span{
+		font-size: 11px !important;
+	}
 	
 	.arrowContainer{
 		margin-top:-50px !important;
@@ -180,10 +192,6 @@
 		float: none;
 	}
 
-	#contactForm {
-		margin : 0 !important;
-	}
-	
 }
 
 @media screen and (max-width: 73.5em) {
@@ -199,10 +207,6 @@
 	.cbp-so-side img {
 		max-width: 120%;
 	}
-
-	#contactForm {
-		margin : 0 !important;
-	}
 	
 }
 
@@ -217,9 +221,6 @@
 		max-width: 100%;
 	}
 
-	#contactForm {
-		margin : 0 !important;
-	}
 	
 }
 
@@ -232,9 +233,4 @@
 	.cbp-qtrotator img {
 		width: 80px;
 	}
-
-	#contactForm {
-		margin : 0 !important;
-	}
-	
 }
