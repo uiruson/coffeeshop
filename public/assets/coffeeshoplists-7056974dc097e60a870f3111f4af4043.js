@@ -1,0 +1,1 @@
+$(document).on("page:load",function(){return $("[ng-app]").each(function(){var module;return module=$(this).attr("ng-app"),angular.bootstrap(this,[module])})});
