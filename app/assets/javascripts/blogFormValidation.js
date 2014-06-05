@@ -1,19 +1,11 @@
 $(document).ready(function() {
     var messageDelay = 2000;
 	//validate form
-	$("#contactForm").validate({
+	$("#blogForm").validate({
 		rules: {
-                name: {
-                    required: true,
-                    minlength: 3
-                },
                 email: {
                     required: true,
                     email: true
-                },
-                message: {
-                    required: true,
-                    minlength: 5
                 }
             },
 
@@ -33,51 +25,43 @@ $(document).ready(function() {
             },
   			invalidHandler: function(event, validator) {
         		var errors = validator.numberOfInvalids();
-                var fullNameInput = $("input[name='name']", this);
                 var emailInput = $("input[name='email']", this);
-                var messageInput = $("textarea[name='message']", this);
                 if (errors) {
                         var message = errors == 1
                                 ? 'Missing 1 field. '
                                 : 'Missing ' + errors + ' fields.';
 
-                        if (fullNameInput.length && !validator.element(fullNameInput)) {
-                            message = "Invalid Name."
-                        } else if (emailInput.length && !validator.element(emailInput)) {
+                        if (emailInput.length && !validator.element(emailInput)) {
                             message = "Invalid Email Address."
-                        } else if (messageInput.length && !validator.element(messageInput)) {
-                            message = "Invalid Message."
                         } 
-          			$(".error-message").html('<div class="alert alert-danger">' + message + '</div>');
-          			$(".error-message").show();
+          			$(".blog-error-message").html('<div class="alert alert-danger">' + message + '</div>');
+          			$(".blog-error-message").show();
         		} else {
-          			$(".error-message").errorhide();
+          			$(".blog-error-message").errorhide();
         		}
   		    },
             submitHandler: function(form) {
                 
                   //$('#contactForm').submit( submitForm).addClass( 'positioned' );
-                  var contactForm = $('#contactForm');
+                  var blogForm = $('#blogForm');
                   var formData = {
-                        'contact[name]'              : $('#senderName').val(),
-                        'contact[email]'             : $('#senderEmail').val(),
-                        'contact[message]'    : $('#senderMessage').val()
+                        'blog[email]'             : $('#blogEmail').val()
                   };
 
  
-                  if ( !$('#senderName').val() || !$('#senderEmail').val() || !$('#senderMessage').val() ) {
-                    $('.incompleteMessageDiv').fadeIn().delay(messageDelay).fadeOut();
-                    contactForm.fadeOut().delay(messageDelay).fadeIn();
+                  if ( !$('#blogEmail').val()) {
+                    $('.incompleteBlogDiv').fadeIn().delay(messageDelay).fadeOut();
+                    blogForm.fadeOut().delay(messageDelay).fadeIn();
                  
                   } else {
-                    $('#contactForm').hide();
-                    $('#sendingMessageDiv').fadeIn();
+                    $('#blogForm').hide();
+                    $('#sendingBlogDiv').fadeIn();
                     
                     $.ajax( {
-                      url: contactForm.attr( 'action' ) + "?ajax=true",
-                      type: contactForm.attr( 'method' ),
+                      url: blogForm.attr( 'action' ) + "?ajax=true",
+                      type: blogForm.attr( 'method' ),
                       data: formData,
-                      success: formSubmission
+                      success: formSubmissions
                     });
                   }
 
@@ -89,17 +73,17 @@ $(document).ready(function() {
 
 
 
-function formSubmission( response ) {
+function formSubmissions( response ) {
     var msgDelay = 5000; 
     response = $.trim( response );
 
-    $('#sendingMessageDiv').fadeOut();
+    $('#sendingBlogDiv').fadeOut();
      
     if ( response == "success" ) {
-        $('#contactForm').hide();
-        $('.thankYouMessageDiv').show();
+        $('#blogForm').hide();
+        $('.thankYouMessageBlogDiv').show();
     } else { 
-         $('#contactForm').hide();
-        $('.thankYouMessageDiv').show();
+         $('#blogForm').hide();
+        $('.thankYouMessageBlogDiv').show();
     }
 }
