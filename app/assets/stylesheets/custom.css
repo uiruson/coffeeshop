@@ -42,6 +42,10 @@
 	.homeContent span{
 		font-size: 11px !important;
 	}
+
+	.thankYouMessageDiv{
+		margin: 0 !important;
+	}
 	
 }
 
@@ -105,7 +109,10 @@
 	#footer .social img{
 		float: none;
 	}
-	
+
+	.thankYouMessageDiv{
+		margin: 0 !important;
+	}
 }
 
 @media (max-width: 480px) {
@@ -192,6 +199,10 @@
 		float: none;
 	}
 
+	.thankYouMessageDiv{
+		margin: 0 !important;
+	}
+
 }
 
 @media screen and (max-width: 73.5em) {
@@ -207,6 +218,10 @@
 	.cbp-so-side img {
 		max-width: 120%;
 	}
+
+    .thankYouMessageDiv{
+		margin: 0 !important;
+	}
 	
 }
 
@@ -221,6 +236,9 @@
 		max-width: 100%;
 	}
 
+	.thankYouMessageDiv{
+		margin: 0 !important;
+	}
 	
 }
 
@@ -232,5 +250,9 @@
 
 	.cbp-qtrotator img {
 		width: 80px;
+	}
+
+	.thankYouMessageDiv{
+		margin: 0 !important;
 	}
 }
