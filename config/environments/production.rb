@@ -59,7 +59,8 @@ Rails.application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.precompile += %w( search.js )
+  #config.assets.precompile += %w( search.js )
+  config.assets.precompile << /\A(?!active_admin).*\.(js|css)\z/
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -83,6 +84,6 @@ Rails.application.configure do
 
   config.assets.js_compressor = Uglifier.new(mangle: false)
 
-  config.assets.precompile += %w( *.css *.js )
+  #config.assets.precompile += %w( *.css *.js )
 
 end

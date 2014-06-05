@@ -132,6 +132,30 @@ h1,h2,h3,h4 {
   padding-bottom: 30px;
 }
 
+/* FILLER SECTION */
+#filler-1 {
+  padding-top: 60px;
+  padding-bottom:106px;
+  background: url("/assets/bg-2.jpg") top center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+#filler-2 {
+  padding-bottom:106px;
+  background: url("/assets/bg-3.jpg") top center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
 
 /* GUIDE SECTION */
 #guide{
