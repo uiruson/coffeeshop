@@ -77,6 +77,15 @@ class PagesController < ApplicationController
   def innocentcoffee
   	@instagram = Instagram.location_recent_media(544408, {:count => 26})
   end
+
+  def lostandfoundcafe
+    @instagram = Instagram.location_recent_media(63432245, {:count => 27})
+  end
+
+  def template
+    id = Instagram.location_search("5106fafce4b08b6e9833b1fd")
+    @instagram = Instagram.location_recent_media(id.first)
+  end
 end
 
 

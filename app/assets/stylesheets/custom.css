@@ -46,6 +46,10 @@
 	.thankYouMessageDiv{
 		margin: 0 !important;
 	}
+
+	.coffeeshopImages{
+	  margin: 0 !important;
+	}
 	
 }
 
@@ -112,6 +116,10 @@
 
 	.thankYouMessageDiv{
 		margin: 0 !important;
+	}
+
+	.coffeeshopImages{
+	  margin: 0 !important;
 	}
 }
 
@@ -203,6 +211,10 @@
 		margin: 0 !important;
 	}
 
+	.coffeeshopImages{
+	  margin: 0 !important;
+	}
+
 }
 
 @media screen and (max-width: 73.5em) {
@@ -235,6 +247,10 @@
 	.thankYouMessageDiv{
 		margin: 0 !important;
 	}
+
+	.coffeeshopImages{
+	  margin: 0 !important;
+	}
 	
 }
 
@@ -250,5 +266,9 @@
 
 	.thankYouMessageDiv{
 		margin: 0 !important;
+	}
+
+	.coffeeshopImages{
+	  margin: 0 !important;
 	}
 }

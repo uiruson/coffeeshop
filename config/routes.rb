@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'pages/bashocafe'
   get 'pages/marulilucafe'
   get 'pages/momentocoffee'
+  get 'pages/lostandfoundcafe'
 
   resources :blogs
 
