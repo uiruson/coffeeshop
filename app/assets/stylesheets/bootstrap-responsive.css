@@ -811,7 +811,8 @@
   }
   .row,
   .thumbnails {
-    margin-left: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .thumbnails > li {
     float: none;
@@ -925,7 +926,7 @@
     margin: -10px;
   }
   .carousel-caption {
-    position: static;
+    display:none !important;
   }
 }
 @media (max-width: 979px) {
