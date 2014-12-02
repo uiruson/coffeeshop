@@ -3,10 +3,12 @@
 
 <h3>About</h3>
 
-This is a conceptual website for a guide to local Vancouver hipster coffeeshops. 
+This is a conceptual website for a guide to local Vancouver hipster coffeeshops. <br/>
 Technology stack:
-Ruby on Rails
-Bootstrap
-HTML/SCSS/CSS
-jQuery
-Instagram API
+<ul>
+<li>Ruby on Rails</li>
+<li>Bootstrap</li>
+<li>HTML/SCSS/CSS</li>
+<li>jQuery</li>
+<li>Instagram API</li>
+</ul>
