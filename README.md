@@ -1,8 +1,7 @@
-== README
-
+<h3>Vancouver Cofeeshop Guide</h3>
 <a href="http://vancouver-coffeeshop.herokuapp.com/">vancouver-coffeeshop.herokuapp.com/</a>
 
-About
+<h3>About</h3>
 
 This is a conceptual website for a guide to local Vancouver hipster coffeeshops. 
 Technology stack:
