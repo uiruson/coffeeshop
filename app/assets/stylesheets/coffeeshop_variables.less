@@ -1,0 +1,217 @@
+// GLOBAL VALUES
+// ----------------------------
+
+@body-html-font-size					:	100%;
+@body-html-padding						:	0;
+@body-html-margin						:	0;
+
+/* FONT FAMILY */
+@font-family-helvetica-neue				:	"Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-oswald						:	"Oswald", sans-serif;
+
+@main-header-font-weight				:	normal;
+@section-heading-font-size				:	65px;
+@section-heading-font-weight			:	400;
+@section-heading-line-height			:	50px;
+@sectionheading-border-bottom			:	1px solid @color-dark-grey;
+@navbar-brand-img-margin-top			:	-8px;
+@navbar-brand-img-width					:	38px;
+
+/* COLOR GUIDE */
+@color-black							:	#000000;
+@color-dark-grey						:	#888888;
+@color-very-dark-grey					:	#333333;
+@color-very-very-dark-grey				:	#555555;
+@color-very-light-grey					:	#f7f7f7;
+@color-light-grayish-cyan				:	#ECF0F1;
+@color-strong-cyan						:	#00D8CC;
+@color-white							:	#FFFFFF;
+
+
+// HOME SECTION
+// ----------------------------
+
+@home-padding							:	60px 0 106px 0;
+@home-url								:	"https://s3.amazonaws.com/vancoffeeshops/img";
+@home-background-attachment				:	fixed;
+@home-background-size					:   cover;
+@home-btn-navbar-margin-top				:   12px;
+@home-content-padding-top				:	150px;
+@home-content-span-vertical-align		:	super;
+@home-content-span-font-size			:	18px;
+@home-text-margin-top					:	40px;
+@hometext-h1-margin						:	10px 0 30px 0;
+@hometext-h1-font-size					:	4.375em;
+@hometext-h1-line-height				:	70px;
+@hometext-p-font-size					:	24px;
+@hometext-p-line-height					:	36px;
+@home-arrow-padding						:	0 10px 25px 10px;
+@home-arrow-margin-top					:	50px;
+@home-arrow-text-align					:	center;
+
+
+
+// ABOUT SECTION
+// ----------------------------
+
+@about-header-padding      				:	0 10px 25px 10px;
+@about-header-margin-top				:	50px;
+@about-header-text-align				:	center;
+@about-header-p-padding-top				:	10px;
+@about-header-p-line-height				:	25px;
+@about-content-p-font-size				:	14px;
+@about-content-p-padding				:	0 25px 30px 25px;
+@about-content-padding-bottom			:	(@about-header-p-padding-top * 4); // 40px
+@about-content-img-margin-top			:	((@about-header-margin-top / 2) - 5); // 20px
+@about-content-h3-margin-top			:	((@about-header-margin-top / 2) + 5); // 30px
+
+
+// FILLER SECTION
+// ----------------------------
+
+@filler-url								:  'https://s3.amazonaws.com/vancoffeeshops/img';
+@filler1-padding						:	60px 0 106px 0;
+@filler1-background-size				: 	cover;
+@filler1-height							:	500px;
+@filler1-background-attachment			:	fixed;
+@filler2-padding-bottom					:	106px;
+
+
+
+
+// GUIDE SECTION
+// ----------------------------
+
+@guide-padding							:	5px 0 30px 0; 
+@guide-box-shadow						:	inset 0 20px 20px -20px rgba(185,185,185,0.5);
+@guideheader-padding					:	0 10px 0 10px;
+@guideheader-magin-top					:	50px;
+@guideheader-text-align					:	center;
+@guideheader-span-font-size				:	15px;
+@guideheader-p-margin-top				:	(@guideheader-span-font-size - 5); //10px
+@guideheader-p-line-height				:	(@guideheader-magin-top / 2); // 25px
+@guidebody-padding-bottom				:	(@guideheader-magin-top - 10); // 40px
+@guidebody-img-margin-top				:	(@guidebody-padding-bottom / 2); // 20px
+@guidebody-h4-padding					:	10px 0 10px 0;
+@guidebody-h4-text-align				:	left;
+@guidebody-h4-line-height				:	1.4;
+@guidebody-p-text-align  				:	@guidebody-h4-text-align;
+@guidebody-p-font-size					:	(@guideheader-span-font-size - 2); //13px
+@guidebody-p-line-height				:	(@guideheader-magin-top/2); //25px
+@guidebody-p-margin-bottom				:	(@guideheader-span-font-size*2); //30px
+@guidebody-p-letter-spacing             :   2px;
+@guidebody-p-margin-top					:	-16px;
+@guideinfo-margin-bottom				:	(@guideheader-span-font-size + 1); // 16px
+@coffeeshopinfoContainer-padding 		:	(@guidebody-padding-bottom / 2); // 20px
+@coffeeshopinfoContainer-p-line-height  : 	@guideheader-p-line-height; 
+@coffeeshopinfoContainer-p-font-size 	:	((@guideheader-magin-top / 2)+2); //27px
+@coffeeshopinfoContainer-p-letter-spacing:  @guidebody-p-letter-spacing;
+@coffeeshopinfoContainer-p-padding		:	(@guideheader-span-font-size+1); //16px
+@coffeeshopinfoContainer-width			:	100%;
+@coffeeshopinfoContainer-url			:	'/assets';
+@coffeeshopinfoContainer-bg-size		:	4px 4px;
+@coffeeshopinfoContainer-height 		:	16px;
+@coffeeshopimages-margin-left			:	72px;
+@coffeeshopimages-width					:	254px;
+@coffeeshopimages-margin 				:	0 28px 20px 0;
+@artworkcontainer-margin-top			:	-50px;
+
+
+
+// FEATURE SECTION
+// ----------------------------
+
+@featureheader-padding					:	@about-header-padding;
+@featureheader-margin-top				:	@about-header-margin-top;
+@featureheader-text-align				:	@about-header-text-align;
+@featureheader-p-padding-top			:	10px;
+@featureheader-p-line-height			:	25px;
+@cbp-so-section-margin-top				:	0.5em;
+@cbp-so-scroller-font-size 				:	(@featureheader-p-padding-top * 4); // 40px
+@cbp-so-scroller-line-height			:	((@featureheader-p-line-height * 2 ) + 5); //55px
+@cbp-so-scroller-padding-top			:	(@featureheader-p-padding-top * 2); //20px
+@cbp-so-scroller-font-size				:	@cbp-so-scroller-padding-top; //20px;
+@cbp-so-scroller-line-height			:	(@featureheader-p-padding-top * 3); // 30px
+@cbp-so-section-h2-font-size			:	5em;
+@cbp-so-section-h2-font-weight			:	300;
+@cbp-so-section-h2-line-height			:	1;
+@cbp-so-section-p-font-size				:	2em;
+@cbp-so-section-p-font-weight			:	@cbp-so-section-h2-font-weight;
+@cbp-so-side-width						:	50%;
+@cbp-so-side-float						:	left;
+@cbp-so-side-margin						:	0;
+@cbp-so-side-padding					:	2em 4%;
+@cbp-so-side-overflow					:	hidden;
+@cbp-so-side-min-height					:	12em;
+@cbp-so-side-transition					:	transform 0.5s, opacity 0.5s;
+@cbp-so-side-right-text-align			:   @cbp-so-side-float;
+@cbp-so-side-left-text-align			:	right;
+@cbp-so-side-right-img-float			:	@cbp-so-side-float;
+@cbp-so-side-left-img-float				:	@cbp-so-side-left-text-align;
+@cbp-so-side-left-width 				:	425px;
+@coffeeIcons-list-style					:	none;
+@coffeeIcons-li-padding-top				:	@featureheader-p-padding-top; // 10px
+@coffeeIcons-li-font-size				:	(@featureheader-p-padding-top * 2); // 20px
+@coffeeIcons-li-line-height				:	(@featureheader-p-padding-top * 3); // 30px
+@coffeeIcons-li-i-padding-right			:	@coffeeIcons-li-font-size; // 20px
+
+
+
+// SEPARATOR SECTION
+// ----------------------------
+
+@bigTriangleColor-pointer-events		:	none;
+@bigTriangleColor-stroke-width			:	2;
+
+
+
+// BLOG SECTION
+// ----------------------------
+
+@blog-padding							:	0 10px 20px 10px;
+@blogsubscription-padding-bottom		:	50px;
+@blogheader-padding						:	@about-header-padding;
+@blogheader-margin-top					:	@about-header-margin-top;
+@blogheader-text-align					:	@about-header-text-align;
+@blogcontainer-padding					:	100px 10px 100px 10px;
+@blogcontainer-h1-font-size				:	40px;
+@blogSubscription-input-border			:	none;
+@blogSubscription-input-height			:	34px;
+@blogSubscription-input-font-size		:	14px;
+@blogSubscription-input-letter-spacing	:	1px;
+@blogSubscription-input-padding			:	9px 10px 8px;
+@blogSubscription-input-min-width		:	240px;
+@blogSubscription-form-margin-top		:	25px;
+@blogSubscription-form-msg-display		:	none;
+@blog-error-message-margin 				:	10px 0 0 -15px;
+
+
+// CONTACT SECTION
+// ----------------------------
+
+@contactheader-padding					:	@about-header-padding;
+@contactheader-margin-top				:	@about-header-margin-top;
+@contactheader-text-align				:	@about-header-text-align;
+@contactheader-p-font-size				:	20px;
+@contactheader-p-font-weight			:	300;
+@contactheader-line-height				:	50px;
+@contactheader-letter-spacing			:	-1px;
+@contat-box-shadow						:	inset 0 20px 20px -20px rgba(185,185,185,0.5);
+@contact-padding 						:	20px 10px 0 10px;
+@contact-form-msg-display				:	none;
+@contact-thankyou-msg-margin-left		:	-75px;
+
+
+
+// FOOTER SECTION
+// ----------------------------
+
+@footer-padding-bottom					:	40px;
+@footer-social-img-float				:	right;
+@footer-social-img-padding				:	5px 5px 5px 5px;
+@footer-social-img-opacity				:	0.5;
+@footer-social-img-hover-opacity		:	(@footer-social-img-opacity * 2); // 1 
+@footer-copyright-padding-top			:	10px;
+@footer-copyright-font-size				:	(@footer-copyright-padding-top + 2); //12px
+
+

@@ -55,6 +55,21 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+	#home {
+		background: url("https://s3.amazonaws.com/vancoffeeshops/img/banner.jpg") top center no-repeat !important;
+		background-size:cover !important;
+	}
+
+	#filler-1{
+		background: url("https://s3.amazonaws.com/vancoffeeshops/img/filler-1.jpg") top center no-repeat !important;	
+		background-size:cover !important;
+	}
+
+	#filler-2{
+		background: url("https://s3.amazonaws.com/vancoffeeshops/img/filler-2.jpg") top center no-repeat !important;
+		background-size:cover !important;
+	}
+
 	.affix {
 		margin: 0 auto;
 		top: 0;
@@ -243,7 +258,7 @@
 
 	.cbp-so-side {
 		float: none;
-		width: 100%;
+		width: 100% !important;
 	}
 
 	.cbp-so-side img {

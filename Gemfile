@@ -6,7 +6,6 @@ gem 'rails', '4.1.0'
 
 #Bootstrap
 gem 'therubyracer' 
-gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap_form'
 
@@ -38,8 +37,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :assets do  
 	# Use SCSS for stylesheets
-	gem 'sass-rails', '~> 4.0.2'
-
+	#gem 'sass-rails', '~> 4.0.2'
+	gem 'less-rails'
 	# Use CoffeeScript for .js.coffee assets and views
 	gem 'coffee-rails', '~> 4.0.0'
 	gem 'sprockets', '2.11.0'

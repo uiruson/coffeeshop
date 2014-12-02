@@ -21,5 +21,6 @@ module Coffeeshop
     # config.i18n.default_locale = :de
     config.serve_static_assets = true
     config.assets.precompile += %w( search.js )
+    config.app_generators.stylesheet_engine :less
   end
 end

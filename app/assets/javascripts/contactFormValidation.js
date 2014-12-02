@@ -99,7 +99,7 @@ function formSubmission( response ) {
         $('#contactForm').hide();
         $('.thankYouMessageDiv').show();
     } else { 
-         $('#contactForm').hide();
+        $('#contactForm').hide();
         $('.thankYouMessageDiv').show();
     }
 }

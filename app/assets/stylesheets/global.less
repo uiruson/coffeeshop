@@ -1,0 +1,43 @@
+@import "coffeeshop_variables.less";
+
+*, *:after, *::before {
+  -webkit-box-sizing: border-box;/* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;/* Firefox, other Gecko */
+  box-sizing: border-box;/* Opera/IE 8+ */
+}
+
+
+body, html { 
+  font-size: @body-html-font-size; 
+  padding: @body-html-padding; 
+  margin: @body-html-margin;
+  overflow-x: hidden; 
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden; 
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+
+h1,h2,h3,h4 {
+  font-family: @font-family-helvetica-neue;
+  font-weight: @main-header-font-weight;
+}
+
+.sectionHeading{
+  font-size: @section-heading-font-size;
+  font-weight: @section-heading-font-weight;
+  line-height: @section-heading-line-height;
+  font-family: @font-family-oswald;
+}
+
+.navbar-brand img{
+  margin-top: @navbar-brand-img-margin-top;
+  width: @navbar-brand-img-width;
+}
