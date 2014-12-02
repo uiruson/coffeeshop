@@ -5,7 +5,6 @@
 About
 
 This is a conceptual website for a guide to local Vancouver hipster coffeeshops. 
-
 Technology stack:
 Ruby on Rails
 Bootstrap
