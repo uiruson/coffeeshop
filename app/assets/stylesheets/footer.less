@@ -6,19 +6,21 @@
   color: @color-white;
   background: @color-very-very-dark-grey;
   padding-bottom: @footer-padding-bottom;
-}
+  
+  .social{
+    img{
+      float: @footer-social-img-float;
+      opacity: @footer-social-img-opacity;
+      padding: @footer-social-img-padding;
+    }
 
-#footer .social img{
-  float: @footer-social-img-float;
-  opacity: @footer-social-img-opacity;
-  padding: @footer-social-img-padding;
-}
+    a img:hover{
+      opacity: @footer-social-img-hover-opacity;
+    }
+  }
 
-#footer .social a img:hover{
-  opacity: @footer-social-img-hover-opacity;
-}
-
-#footer .copyright {
-  font-size: @footer-copyright-font-size;
-  padding-top: @footer-copyright-padding-top;
+  .copyright {
+    font-size: @footer-copyright-font-size;
+    padding-top: @footer-copyright-padding-top;
+  }
 }

@@ -15,46 +15,48 @@
   text-align: @guideheader-text-align;
 }
 
-.guideHeader span{
-  color: @color-black;
-  font-size: @guideheader-span-font-size;
-}
-
-.guideHeader p {
+.guideHeader{
+  span{
+    color: @color-black;
+    font-size: @guideheader-span-font-size;
+  }
+  
+  p {
   color: @color-dark-grey;
-  line-height: @guideheader-p-line-height;
-  padding-top: @guideheader-p-margin-top;
+    line-height: @guideheader-p-line-height;
+    padding-top: @guideheader-p-margin-top;
+  }
 }
 
 .guideBody{
   padding-bottom: @guidebody-padding-bottom;
   text-align: @guideheader-text-align;
-}
+  
+  img{
+    margin-top: @guidebody-img-margin-top;
+  }
 
-.guideBody img{
-  margin-top: @guidebody-img-margin-top;
-}
+  h4{
+    font-family: @font-family-oswald;
+    padding: @guidebody-h4-padding;
+    text-align: @guidebody-h4-text-align;
+    line-height: @guidebody-h4-line-height;
+  }
 
-.guideBody h4{
-  font-family: @font-family-oswald;
-  padding: @guidebody-h4-padding;
-  text-align: @guidebody-h4-text-align;
-  line-height: @guidebody-h4-line-height;
-}
+  p{
+    font-family: @font-family-oswald;
+    text-align: @guidebody-p-text-align;
+    color: @color-dark-grey;
+    font-size: @guidebody-p-font-size;
+    line-height: @guidebody-p-line-height;
+    padding-bottom: @guidebody-p-margin-bottom;
+    letter-spacing: @guidebody-p-letter-spacing;
+    margin-top:  @guidebody-p-margin-top;
+  }
 
-.guideBody p{
-  font-family: @font-family-oswald;
-  text-align: @guidebody-p-text-align;
-  color: @color-dark-grey;
-  font-size: @guidebody-p-font-size;
-  line-height: @guidebody-p-line-height;
-  padding-bottom: @guidebody-p-margin-bottom;
-  letter-spacing: @guidebody-p-letter-spacing;
-  margin-top:  @guidebody-p-margin-top;
-}
-
-.guideBody #readMore{
-  font-size: 8px;
+  #readMore{
+    font-size: 8px;
+  }
 }
 
 #guideInfo{
